@@ -197,7 +197,7 @@ if st.button("Predict Machine Health"):
 st.subheader("📊 Model Performance")
 
 try:
-    df = pd.read_csv(r"C:\Major Project\pm_project\data_set.csv")
+    df = pd.read_csv("data_set.csv")
     df.columns = df.columns.str.strip()
 
     df['power'] = df['Torque [Nm]'] * df['Rotational speed [rpm]']
